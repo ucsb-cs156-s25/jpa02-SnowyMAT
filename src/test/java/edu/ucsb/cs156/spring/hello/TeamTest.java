@@ -41,6 +41,8 @@ public class TeamTest {
         assertEquals(true, team.equals(similar));
         similar.addMember("other");
         assertEquals(false, team.equals(similar));
+        Team different = new Team("different-team");
+        assertEquals(false, team.equals(different));
     }
 
     @Test
